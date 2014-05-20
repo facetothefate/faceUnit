@@ -5,6 +5,8 @@ faceUnit is A web based JavaScript unit test tool, the frist version came out in
 * Auther: Zhifei Fang
 * Email: facetothefate@gmail.com
 
+This project is running [here](http://thefaceteam.org/projects/faceUnit/)
+
 #Get start
 We start this a simple "Hello world!"<br>
 Input following script, and then click `Run` button.
