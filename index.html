@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            FaceUnit | A unit test tool for javascript
+        </title>
+        <meta name="description" content="A unit test tool made for javascript">
+        <meta name="keywords" content="unit test,test,JavaScript,faceUnit,face team">
+        <meta name="author" content="Zhifei Fang">
+        <link rel="stylesheet" type="text/css" href="funit.css">
+    </head>
+    <body>
+        <div id="testCase">
+            <div class="functionBar">
+                <button id="testCaseAdd" class="btn btn-small">Add</button>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <td></td>
+                        <td>Test case</td>
+                        <td>Assertion</td>
+                        <td>Result</td>
+                        <td></td>
+                    </tr>
+                </thead>
+                <tbody id="testCaseField">
+                </tbody>
+            </table>
+        </div>
+        <div id="editorContainer">
+            <div class="functionBar">
+                 <button id="scriptRun" class="btn btn-small">Run</button>
+            </div>
+            <div id="editor">
+            </div>
+        </div>
+        <div id="console">
+        </div>
+    </body>
+    <script type="text/javascript" src="lib/ace/src-min-noconflict/ace.js"></script>
+    <script type="text/javascript" src="funit.js"></script>
+</html>

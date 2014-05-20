@@ -1,0 +1,195 @@
+*{
+    ::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    ::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+        border-radius: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+    }
+    scrollbar-3dlight-color:#D4D0C8; /*- 最外左 -*/
+    scrollbar-highlight-color:#fff; /*- 左二 -*/
+    scrollbar-face-color:#808080; /*- 面子 -*/
+    scrollbar-arrow-color:#666; /*- 箭头 -*/
+    scrollbar-shadow-color:#808080; /*- 右二 -*/
+    scrollbar-darkshadow-color:#D7DCE0; /*- 右一 -*/
+    scrollbar-base-color:#D7DCE0; /*- 基色 -*/
+    scrollbar-track-color:#272822;/*- 滑道 -*/
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    min-width: 1280px;
+    font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas', 'source-code-pro', monospace;
+   /* scrollbar-arrow-color:#999999;
+    scrollbar-darkshadow-color: #999999;
+    scrollbar-face-color: #272822;
+    scrollbar-highlight-color: #ffffff;
+    scrollbar-base-color: #272822;*/
+
+    
+}
+a{text-decoration: none;color:black;}
+a:visited {text-decoration: none;}
+a:hover {text-decoration: underline;}
+a:active {text-decoration: none;}
+.btn,.submit,.input,btn-small{
+    /*display:block;
+    padding:15px;
+    font-size:20px; 
+    border:0px solid;
+    -webkit-border-radius: 13px;
+    -moz-border-radius: 13px;
+    border-radius: 13px;
+    */
+    display: inline-block;  
+    zoom: 1; /* zoom and *display = ie7 hack for display:inline-block */  
+    *display: inline;  
+    vertical-align: baseline;  
+    margin: 2px;  
+    padding:20px;
+    cursor: pointer;  
+    text-align: center;  
+    text-decoration: none;  
+    font-size: 1.125em;
+    color:white;
+    padding: .5em 2em .55em;  
+    /*text-shadow: 0 1px 1px rgba(0,0,0,.3);*/  
+    -webkit-border-radius: .5em;   
+    -moz-border-radius: .5em;  
+    border-radius: .5em;  
+    border:1px solid;
+    -webkit-box-shadow: 0 1px 2px rgba(255,255,255,.2);  
+    -moz-box-shadow: 0 1px 2px rgba(255,255,255,.2);  
+    box-shadow: 0 1px 2px rgba(255,255,255,.2);  
+    outline:none;
+} 
+.btn:active {  
+    position: relative;  
+    top: 1px;  
+}
+.submit:active{
+    position: relative;  
+    top: 1px;     
+}
+.input{
+    padding: 6px 12px;
+    background:rgba(255,255,255,0.1);
+    background: transparent\9;
+    zoom:1\8; /* required for the filters */
+    -ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#99FFFFFF, endColorstr=#99FFFFFF)"; /* IE8 */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99FFFFFF, endColorstr=#99FFFFFF); /* IE5.5-7 */
+    vertical-align:middle;
+    cursor:text; 
+    outline:none;
+    text-align:left;
+    -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+.input:focus{
+    -webkit-box-shadow: 0px 0px 10px rgba(0,153,204,.7);  
+    -moz-box-shadow: 0px 0px 10px rgba(0,153,204,.7);  
+    box-shadow: 0px 0px 10px rgba(0,153,204,.7); 
+}
+.option{
+    background-color: #272822;
+}
+.submit,.btn-small{
+    background: none;
+}
+.btn-small{
+    padding: 5px 10px;
+    font-size: 0.9em;
+}
+
+.functionBar{
+    padding:3px;
+    border-bottom: 1px white solid;
+}
+#editorContainer{
+    background-color: #272822;
+    width: 75%;
+    height: 75%;
+    position: absolute;
+    right: 0px;
+}
+#editor{
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    right: 0px;
+}
+#console{
+    background-color: #272822;
+    width: 75%;
+    height: 24.9%;
+    overflow: auto;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    color: white;
+}
+.w{
+    color: yellow;
+}
+.e{
+    color: red;
+}
+.s{
+    color: green;
+}
+#testCase{
+    background-color: #272822;
+    height: 100%;
+    width: 24.9%;
+    overflow: auto;
+    position: absolute;
+    left: 0px;
+    color: white;
+    border-right: 1px white solid;
+}
+#testCase table{
+    width: 100%;
+}
+.pass{
+    background-color: green;
+}
+.faild{
+    background-color: red;
+}
+.running{
+    background-color: yellow;
+}
+.popup{
+    z-index: 19890727;
+    position: absolute;
+    background-color: #272822;
+    height: 225px;
+    width: 400px;
+    top:50%;
+    left:50%;
+    margin-top:-150px;
+    margin-left: -200px;
+    border: 1px white solid;
+    color: white;
+    padding: 20px;
+    text-align:right;
+}
+.popup table{
+    width: 100%;
+    text-align:left
+}
+.popupFunctionBar{
+    position: absolute;
+    bottom:0px;
+    text-align: right;
+    margin:20px 0px
+}
+#testCase h3{
+    margin: 10px 5px;
+}
