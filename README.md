@@ -2,8 +2,8 @@ faceUnit
 ========
 
 faceUnit is A web based JavaScript unit test tool, the frist version came out in 3 days.
-*Auther: Zhifei Fang
-*Email: facetothefate@gmail.com
+* Auther: Zhifei Fang
+* Email: facetothefate@gmail.com
 
 #Get start
 We start this a simple "Hello world!"<br>
@@ -41,9 +41,9 @@ function test(a,b){
 assertion.equal(test,"[1,2]",3);
 ```
 `assertion.equal(__function,__testcase,__result)`<br>
-*`__function` is the function you want to test
-*`__testcase` is the a JSON string. It should contaion your testcase. It should always be an Array.
-*`__result` is the expected result. 
+* `__function` is the function you want to test
+* `__testcase` is the a JSON string. It should contaion your testcase. It should always be an Array.
+* `__result` is the expected result. 
 
 If the test passed, you will find the passed information output in console.
 
