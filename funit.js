@@ -189,7 +189,7 @@ var Assertion = function(){
         //Different type, different equal
         if((is(result,"Number")||is(result,"String")||is(result,"Boolean"))&&result===__result||
            is(result,"Object")&&result.equal(__result)||
-           is(result,"Array")&&result.toString===__result.toString||
+           is(result,"Array")&&result.toString()===__result.toString()||
            is(result,"Null")&&is(__result,"Null")||
            is(result,"Undefined")&&is(__result,"Undefined")
            
